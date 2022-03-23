@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Clase 2 - Programacion 3</title>
+</head>
+
+<body>
+    <form action="/" method="post">
+        Nombre: <br>
+        <input type="text" placeholder="Escribir Nombre" name="nombre"> <br>
+        Apellido: <br>
+        <input type="text" placeholder="Escribir Apellido" name="apellido"> <br>
+        Seleccione Género: <br>
+        <input type="radio" name="genero" id="genero" value="1"> Masculino
+        <input type="radio" name="genero" id="genero" value="2"> Femenino
+        <!-- */ atributo checked para que sea por defecto el seleccionado -->
+        <input type="radio" name="genero" id="genero" value="3" checked> Otro
+        <br>
+
+        <!-- checkbox -->
+        Intereses: <br>
+        <input type="checkbox" name="intereses" id="intereses" checked>Deportes <br>
+        <input type="checkbox" name="intereses" id="intereses"> Series<br>
+        <input type="checkbox" name="intereses" id="intereses"> Peliculas<br>
+
+        <br>
+        <br>
+        <!-- Fechas -->
+        Fecha de nacimiento: <br>
+        <input type="date" name="fecha-nacimiento" id="fecha-nacimiento" min="2022-03-23" max="2022-03-29"> <br>
+        <br>
+        <!-- Listas Desplegables -->
+        Seleccione su provincia: <br>
+        <select name="provincia" id="provincia">
+            <option value="">Seleccone...</option>
+            <option value="1">Cordoba</option>
+            <option value="2">Buenos Aires</option>
+            <option value="3">Santa Fe</option>
+            <option value="4">Mendoza</option>
+        </select>
+
+        <br>
+        <br>
+        <br>
+        <!-- Caja de texto/area de texto -->
+        Ingrese un comentario: <br>
+        <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Ingrese comentario..." style="resize: none;" ></textarea>
+        <br>
+        <br>
+        Ingrese su numero:
+        <input type="number" name="numero" id="numero" >
+        <!-- Expresiones regulares simples -->
+        <!-- <input type="type"   pattern="[0-9]{3}"> -->
+        <!-- <input type="type"   pattern="[a-z]{3}"> -->
+        <br>
+        <br>
+        <!-- Botones -->
+        <!-- Boton guardar -->
+        <button type="submit">Registrarse</button> 
+        <button type="reset">Restablecer</button>
+    </form>
+
+</body>
+
+</html>

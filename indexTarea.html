@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Clase 2 - Tarea</title>
+</head>
+
+<body style="background-color: antiquewhite; ">
+    <h1 style="background-color: bisque;">Compra de Entradas</h1>  
+    <h3>Datos Personales</h3>
+    <form action="/" method="post">
+        Ingrese su Nombre: <br>
+        <input type="text" placeholder="Escribir Nombre" name="nombre"> <br>
+        Ingrese su Apellido: <br>
+        <input type="text" placeholder="Escribir Apellido" name="apellido"> <br>
+        Numero telefonico: <br>
+        <input type="number" name="numero" id="numero" placeholder="Ingrese su numero" > <br> <br>
+        
+        Seleccione Género: <br>
+        <input type="radio" name="genero" id="genero" value="1"> Masculino
+        <input type="radio" name="genero" id="genero" value="2"> Femenino
+        <br>
+        <br>
+        
+        <h3>Datos de Pelicula</h3>
+        Cine: <br>
+        <input type="checkbox" name="ubicacion" id="ubicacion" checked>Patio Olmos <br>
+        <input type="checkbox" name="ubicacion" id="ubicacion"> Nuevo Centro Shopping<br>
+
+        <br>
+ 
+        Dia: <br>
+        <input type="date" name="fecha-pelicula" id="fecha-pelicula" min="2022-03-23" max="2022-04-07"> <br>
+        <br>
+        <!-- Listas Desplegables -->
+        Pelicula: <br>
+        <select name="pelicula" id="pelicula">
+            <option value="">Seleccone...</option>
+            <option value="1">Batman</option>
+            <option value="2">A ciegas</option>
+            <option value="3">Ambulancia</option>
+            <option value="4">Axiomas</option>
+            <option value="5">Duna</option>
+            <option value="6">Hasta la Muerte</option>
+            <option value="7">Encanto</option>
+        </select> <br> <br>
+
+        Cantidad de entradas: <br>
+        <input type="number" name="numero" id="numero" placeholder="Ingrese su numero"> <br> <br>
+ 
+        <br>
+       
+        <!-- Caja de texto/area de texto -->
+        Ingrese aclaracion: <br>
+        <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Ingrese comentario..." style="resize: none;" ></textarea>
+        <br>
+        <br>
+        
+        
+        <!-- Botones -->
+        <!-- Boton guardar -->
+        <button type="submit">Registrarse</button> 
+        <button type="reset">Restablecer</button>
+    </form>
+
+</body>
+
+</html>
